@@ -1,9 +1,12 @@
 
 // MY CODE IS HERE
+
 const capitalizeSentences = function (str) {
   let result = ''
   for (let i = 0; i < str.length; i++) {
-    if (i === 0 || str[i - 2] === '.') {
+    if (i === 0 || str[i - 1] === '.') {
+      result += str[i].toUpperCase()
+    } else if (str[i - 2] === '.' && str[i - 1] === ' ') {
       result += str[i].toUpperCase()
     } else {
       result += str[i].toLowerCase()
