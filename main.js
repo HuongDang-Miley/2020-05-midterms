@@ -1,4 +1,4 @@
-
+1/
 // MY CODE IS HERE
 const capitalizeSentences = function (str) {
   let result = ''
